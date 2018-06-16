@@ -1,0 +1,7 @@
+
+
+Download the 'start' tag of the repo from @btholt github repo
+
+Install all modules after setup
+    yarn or yarn install 
+
