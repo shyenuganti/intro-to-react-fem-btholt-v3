@@ -5,3 +5,16 @@ Download the 'start' tag of the repo from @btholt github repo
 Install all modules after setup
     yarn or yarn install 
 
+Prettier: Formatter coming from the 'GO'land
+    yarn global add prettier
+Added format command in the package.json
+Run eslint --init in the workspace. Creates a settings file. Select AirBnb Style Guide, React and output in JSON format. 
+Upgrade ESLint to 4.9.0
+Added ESLint config. This will ask for more packages like eslint-config-airbnb, eslint-config-prettier, eslint-plugin-prettier. Install them globally/locally.
+Webpack:
+yarn global add webpack webpack-cli
+configured webpack.config.json
+
+
+
+
