@@ -24,6 +24,13 @@ Commands:
 
 This starts the webpack dev server on localhost and keeps listening for changes to re-render
 
+Added a router and router modules.
+yarn add react-router-dom if its not already present or in case of errors.
+Stop the dev server and restart or else you will see compilation errors
+Added a new route component and added routes in the cliantapp.jsx
+
+
+
 
 
 

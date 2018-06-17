@@ -21,12 +21,20 @@ module.exports = {
     },
     module: {
         rules: [
-        {
-            enforce: 'pre',
-            test: /\.jsx?$/,
-            loader: 'eslint-loader',
-            exclude: /node_modules/
-        },        
+        // {
+        //     enforce: 'pre',
+        //     test: /\.jsx?$/,
+        //     loader: 'eslint-loader',
+        //     exclude: /node_modules/,
+        //     use: [{
+        //         loader: require.resolve('eslint-loader'),
+        //         options: {
+        //             formatter: eslintFormatter,
+        //             eslintPath: require.resolve('eslint'),
+        //             emitWarning: true
+        //         },
+        //     }]
+        // },        
         {
             test: /\.jsx?$/,
             loader: 'babel-loader'

@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter, Route } from 'react-router-dom';
+import Landing from './Landing';
 
 const App = () => (
-  <div className="app">
-    <div className="landing">
-      <h1>svideo</h1>
-      <input type="text" placeholder="Search" />
-      <a href=" ">or Browse All</a>
-    </div>
-  </div>);
+  <HashRouter>
+    <div className="app">
+    <Route exact path="/" component={Landing} />    
+  </div>
+  </HashRouter>
+
+);
+   
 ReactDOM.render(<App />, document.getElementById('app'));
