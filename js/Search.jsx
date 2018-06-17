@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import preload from '../data.json';
 
 const Search = () => (
- <div>   
-    <h1 style={{ color:"blue" }}> Your Route works ..This is the search page.</h1>
-    <Link to="/" style={{ color:"red" }}> Go to Homepage</Link>
+ <div className="search">   
+    { preload.shows.map( (show) => <h3>{show.title}</h3> ) }
 </div>
 );
 
