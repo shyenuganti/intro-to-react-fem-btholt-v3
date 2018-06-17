@@ -48,4 +48,11 @@ ErrorPage configured in this commit. Note that we started new component Switch f
 
 PropTypes is no more included as part of React starting v15. 
 Mostly useful for documentation and dev time compilation errors
-Also checkout default props
+Also checkout default props.
+
+Spread Operator: 
+Allows you to pass all the properties of the object to be passed in as first class vars instead of the big show object. 
+The properties can be read from props directly as if they were passed individually.
+Useful when we dont have to move all the data in the object if not used inside the component. 
+But being explicit is more useful than using ... operator 
+    Ex: <ShowCard title={show.title} />
