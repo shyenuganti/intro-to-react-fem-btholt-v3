@@ -1,4 +1,6 @@
 import React from 'react';
+import {shape, string} from 'prop-types';
+
 const ShowCard = (props) => (
     <div className='show-card'>
        <img alt={ `${props.show.title} Show Poster` } src={ `/public/img/posters/${props.show.poster}`} />       
@@ -9,5 +11,18 @@ const ShowCard = (props) => (
          </div>
     </div>
 );
+
+// PropTypes is no more included as part of React starting v15. 
+// Mostly useful for documentation and dev time compilation errors
+// Also checkout default props
+
+ShowCard.propTypes = {
+    show: shape({
+        poster:string.isRequired,
+        title:string.isRequired,
+        year:string.isRequired,
+        description:string.isRequired
+    }).isRequired
+}
 
 export default ShowCard;

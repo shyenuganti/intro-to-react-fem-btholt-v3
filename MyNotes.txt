@@ -45,3 +45,7 @@ websites (where the server can only respond to requests for files that it knows 
 historyApiFallback: true - Gives control to the browser if the server couldnot find the orute instead of returning 404. This essentially returns index page . 
 Browser routing has to configure the error page. If no error or fallback page configured, the index page is served to the customer.
 ErrorPage configured in this commit. Note that we started new component Switch from the router module to make this work. 
+
+PropTypes is no more included as part of React starting v15. 
+Mostly useful for documentation and dev time compilation errors
+Also checkout default props
