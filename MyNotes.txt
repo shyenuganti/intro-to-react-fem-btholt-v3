@@ -33,4 +33,6 @@ Added a second route to the app. Just a basic barebones page to verify routing.
 
 Used the 'Link' component to link both the pages to each other for easy navigation. 
 
+Replaced HashRouter with BrowserRouter
+Added historyApiFallback: true to webpack dev server config
 
