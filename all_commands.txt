@@ -15,6 +15,15 @@ Webpack:
 yarn global add webpack webpack-cli
 configured webpack.config.json
 
+Added the commands to package.json
+Formatted code for eslintAdded ESLINT config in webpack.config
+Added Dev Server to webpack.config
+Commands: 
+    yarn start:dev or
+    npm run start:dev
+
+This starts the webpack dev server on localhost and keeps listening for changes to re-render
+
 
 
 
