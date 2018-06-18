@@ -69,3 +69,7 @@ Once you extend Component, you get access to a ton of react methods and variable
 We inittialize the state in the constructor and use it anywhere in the markup.
 No external component can ever the state of the Search component. Strictly prohibited.
 
+***Do not modify state directly. Always use setState(). React will not know the change to rerender.
+
+
+
