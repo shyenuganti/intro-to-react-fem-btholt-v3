@@ -58,3 +58,9 @@ But being explicit is more useful than using ... operator
     Ex: <ShowCard title={show.title} />
 
 'Styled' components is one way of styling components in React. This has additional benefits of colocating CSS and the component in one place making it easy to maintain. 
+
+Converting Search component from a stateless function component to stateful react component.
+Must:
+All Stateful components extends 'Component'
+Has to implement render() method
+render should always return markup.
