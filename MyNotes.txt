@@ -56,3 +56,5 @@ The properties can be read from props directly as if they were passed individual
 Useful when we dont have to move all the data in the object if not used inside the component. 
 But being explicit is more useful than using ... operator 
     Ex: <ShowCard title={show.title} />
+
+'Styled' components is one way of styling components in React. This has additional benefits of colocating CSS and the component in one place making it easy to maintain. 
