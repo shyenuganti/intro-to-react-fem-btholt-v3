@@ -70,6 +70,10 @@ We inittialize the state in the constructor and use it anywhere in the markup.
 No external component can ever the state of the Search component. Strictly prohibited.
 
 ***Do not modify state directly. Always use setState(). React will not know the change to rerender.
+we have to bind the 'this' to the component context or else any change will throw an error as 'this' in the component is undefined when it is rendered.
 
+Transform Class properties: Stage 2 proposal
+    Add Babel plugin - babel-lugin-transform-class-properties in .babelrc
+    Not included this piece in this example.
 
 
