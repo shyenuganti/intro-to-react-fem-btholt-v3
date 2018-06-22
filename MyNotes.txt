@@ -77,3 +77,5 @@ Transform Class properties: Stage 2 proposal
     Not included this piece in this example.
 
 
+Skipping Flow part of the class. Found more confusing for a beginner.
+
