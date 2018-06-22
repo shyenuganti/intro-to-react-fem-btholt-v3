@@ -76,8 +76,4 @@ Transform Class properties: Stage 2 proposal
     Add Babel plugin - babel-lugin-transform-class-properties in .babelrc
     Not included this piece in this example.
 
-Flow: Type system for Javascript from Facebook
-
-yarn flow init : convert your project to flow project. Initialize a .flowconfig file
-yarn global add flow-typed : 
 

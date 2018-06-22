@@ -11,16 +11,12 @@ class Search extends Component {
         searchTerm: ''
     };
 
-    //this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
+    this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
   }
 
-//   handleSearchTermChange (event) {
-//       this.setState({ searchTerm: event.target.value});
-//   }
-
-    handleSearchTermChange = event => {
-        this.setState( { searchTerm: event.target.value} );
-    }
+  handleSearchTermChange (event) {
+      this.setState({ searchTerm: event.target.value});
+  }
 
   render() {   
    return (  
