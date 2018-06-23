@@ -142,7 +142,19 @@ Rootreducer will dispatch to other reducers if necessary
 2 things to remember when writing a root reducer:
     Default STATE: to return in casea state is not passed/undefined
     Default ACTION: if no action passed, uses the 'default' action.
+
+ACTION:
+    Actions are objects
+    Each action has:
+        type : string
+        payload : any
+        error: ERROR
+        metadata:
+    type and payload are the most commonly used. 
+    Do not change the names EVER!
+
     
+     
 
 
 
