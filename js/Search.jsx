@@ -1,6 +1,8 @@
 import React from 'react';
 import ShowCard from './ShowCard';
 import { Component } from 'react';
+import Header from './Header';
+
 
 class Search extends Component {
 
@@ -21,13 +23,13 @@ class Search extends Component {
    return (  
         <div className="search"> 
             <header>
-                <h1>svideo</h1>
                 <input 
                     onChange={this.handleSearchTermChange} 
                     value={this.state.searchTerm} 
                     type="text" 
                     placeholder="Search"
                 />
+                <h1>svideo</h1>
             </header>
             <div>
             { this.props.shows
