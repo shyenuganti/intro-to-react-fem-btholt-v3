@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Spinner from './Spinner';
+import axios from 'axios';
 
 class Details extends Component {
     
