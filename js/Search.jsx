@@ -22,15 +22,9 @@ class Search extends Component {
   render() {   
    return (  
         <div className="search"> 
-            <header>
-                <input 
-                    onChange={this.handleSearchTermChange} 
-                    value={this.state.searchTerm} 
-                    type="text" 
-                    placeholder="Search"
-                />
-                <h1>svideo</h1>
-            </header>
+           <Header  showSearch 
+                    handleSearchTermChange={this.handleSearchTermChange}
+                    searchTerm={this.state.searchTerm} />
             <div>
             { this.props.shows
             .filter( show => `${show.title} ${show.description}`.toUpperCase()

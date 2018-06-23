@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom'
 const Header = (props) => {
     let utilSpace;
     if(props.showSearch){
-        utilspace=<h1>Nothing Here..lol</h1>;
+        utilSpace=( <input 
+            onChange={props.handleSearchTermChange} 
+            value={props.searchTerm} 
+            type="text" 
+            placeholder="Search"
+        />);
     }else{
         utilSpace= (<h2><Link to='/search'>Back</Link></h2>);
     }
@@ -18,7 +23,9 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-    showSearch: false
+    showSearch: false,
+    handleSearchTermChange: function noop() {},
+    searchTerm: ''
 };
 
 export default Header;
