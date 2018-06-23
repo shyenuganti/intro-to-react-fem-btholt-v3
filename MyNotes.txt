@@ -101,4 +101,18 @@ React Design Architectures:
     15.5 and earlier : Stack Architecture
     16 and above: Fiber Architecture
             Completely new code base designed from ground up.API compatible.
+            Multiple top level return elements
+            async/await on life cycle methods
+            Perf tools have to be rewritten.
+
+Add the react dev tools plugin to chrome to see the rendered react dom in the
+    developer tools section of chrome. From there you can interact/view the rendered reacr dom
+    in terms of your own created components instead of plain native html elements. 
+    
+Perf Tools:
+    use the perf tools from react addons to optimize and monitor react app.
+    Do not ship perf tools code into production. Check performance and delete. 
+    Use shouldComponentUpdate life cycle method to check wasted renders and wated time
+        to figure out the performace of your app.
+
 
