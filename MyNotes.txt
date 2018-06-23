@@ -79,3 +79,13 @@ Transform Class properties: Stage 2 proposal
 
 Skipping Flow part of the class. Found more confusing for a beginner.
 
+Lifecycle methods:
+    Can be used only inside the Component classes. Cannot be used inside the react functions.
+    
+    ComponentWillMount : Called on server before rendering
+    ComponentdidMount : called on browser afer rendering. window object is avaialble inside this. 
+            This will also recieve props from parent
+            Add events or listeners
+    componentWillUnmount : Before the component is about to leave the dom   
+            clean up the events or listeners
+    
