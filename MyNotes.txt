@@ -93,3 +93,6 @@ yarn api : run this command to start a local server that returns ratings on ajax
 we will use this to make an ajax call in the component life cycle method.
 
 Using Axios library to make Ajax requests.
+
+Adding a direct link on the show card to take us to the details page for that show. 
+Styled components can wrap any react element. Earlier we styled the div, but we styled the Link and used Wrapper instead of Link directly. 
