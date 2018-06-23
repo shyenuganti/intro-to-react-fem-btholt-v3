@@ -108,11 +108,44 @@ React Design Architectures:
 Add the react dev tools plugin to chrome to see the rendered react dom in the
     developer tools section of chrome. From there you can interact/view the rendered reacr dom
     in terms of your own created components instead of plain native html elements. 
-    
+
 Perf Tools:
     use the perf tools from react addons to optimize and monitor react app.
     Do not ship perf tools code into production. Check performance and delete. 
     Use shouldComponentUpdate life cycle method to check wasted renders and wated time
         to figure out the performace of your app.
+---------------------------------------------------------------------------
+                                REDUX
+                        State Management Framework
+
+Redux is not related to React at all. Alleviates the data tunnelling problem
+with a central store.
+It is completely independent framework that can be used independently.
+Adopted from Facebook Flux
+Flux vs REDUX   
+    Flux has many stores. One for each concern
+        An app can have some 100 stores on one page. 
+        Cannot track what data goes where   
+        Difficult to synchronize stores and data
+    Redux has only one master store.
+        Big store is just a tree and each part of the app is subscribed to one part of tree
+        The top level fn of that tree is Reducer
+        Reducer takes STATE and ACTION and returns a new STATE
+        Extremely testable
+
+All redux reducers MUST be pure functions. 
+    Given the same input, the reducer MUSt return the same output every single time. 
+
+Rootreducer will dispatch to other reducers if necessary
+    Other child reducers will take care of the custom transitions.
+
+2 things to remember when writing a root reducer:
+    Default STATE: to return in casea state is not passed/undefined
+    Default ACTION: if no action passed, uses the 'default' action.
+    
+
+
+
+
 
 
